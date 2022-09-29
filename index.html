@@ -4,32 +4,56 @@
 	<meta charset="UTF-8">
 	<title>Feed</title>
 	<style type="text/css">
-		.navigation_bar {display: flex; flex-wrap: nowrap; background-color: lightcyan;}
+		.navigation_bar {
+			display: flex;
+			flex-wrap: nowrap;
+			background-color: darkgreen;
+			height: 72px;
+			position: fixed;
+			width: 100%;
+			top: 0;
+			left: 0;}
+		.navigation_bar > img {
+			border-bottom-left-radius: 60%; border-bottom-right-radius: 60%;
+			margin-top: 2px;
+			height: 120px;
+			border: 8px solid darkgreen;}
+
+		.bottom_bar {
+			display: flex;
+			height: 52px;
+			background-color: darkgreen;
+			position: fixed;
+			width: 100%;
+			bottom: 0;
+			left: 0;}
+
 		.navigation_button {
-  			background-color: #4CAF50; /* Green */
+  			background-color: green;
+  			height: 50px;
+  			width: 100%;
   			border: none;
+  			margin: auto;
   			color: white;
-  			padding: 15px 32px;
   			text-align: center;
-  			text-decoration: none;
-  			display: inline-block;
-  			font-size: 16px;}
-		.feed {display: flex; flex-wrap: nowrap; background-color: lightgray;}
+  			font-size: 20px;}
+  		.navigation_button:hover {background-color: lightgreen;}
 		
 	</style>
 </head>
 
 <body>
 	<div class="navigation_bar">
-		<button class="navigation_button">
+		<button class="navigation_button" onclick="window.location.href='index.html#top';">
 			Home
 		</button>
-		<button class="navigation_button">
+		<button class="navigation_button" onclick="window.location.href='addPost.html';">
 			Add Post
 		</button>
+		<img src="data\profile_pic.jpg" alt="Your profile picture">
 	</div>
-	<div class="feed">
-		
+	<div class="feed_container">		
 	</div>
+	<div class="bottom_bar"></div>
 </body>
 </html>
