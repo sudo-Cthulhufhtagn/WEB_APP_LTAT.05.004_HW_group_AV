@@ -2,76 +2,20 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
+	<link rel="stylesheet" href="data/global_styles.css" media="screen" />
 	<title>Feed</title>
-	<style type="text/css">
-		.navigation_bar {
-			display: flex;
-			flex-wrap: nowrap;
-			background-color: darkgreen;
-			height: 72px;
-			position: fixed;
-			width: 100%;
-			top: 0;
-			left: 0;}
-		.navigation_bar > img {
-			border-bottom-left-radius: 60%; border-bottom-right-radius: 60%;
-			margin-top: 2px;
-			height: 120px;
-			border: 8px solid darkgreen;}
-
-		.bottom_bar {
-			display: flex;
-			height: 52px;
-			background-color: darkgreen;
-			position: fixed;
-			width: 100%;
-			bottom: 0;
-			left: 0;}
-
-		.feed_starter {
-			background-color: lightgreen;
-			height: 72px;}
-		.feed_starter ~ div {
-			display: flex;
-			width: 75vw;
-			margin-top: 16px;
-			padding: 12px;
-			margin-left: auto;
-			margin-right: auto;
-			background-color: whitesmoke;}
-
-		.feed_container {
-			background-color: lightgreen;
-			min-height: 100vh;}
-		.feed_container p {
-			padding-left: 6vw;
-			margin: 0px;}
-		.feed_container img + p {
-			padding-top: 5vh;}
-
-		.navigation_button {
-  			background-color: green;
-  			height: 50px;
-  			width: 100%;
-  			border: none;
-  			margin: auto;
-  			color: white;
-  			text-align: center;
-  			font-size: 20px;}
-  		.navigation_button:hover {background-color: lightgreen;}
-		
-	</style>
 </head>
 
 <body style="margin: 0px;">
 	<div class="navigation_bar">
+		<div style="min-width: 12vw; max-width: 154px;"></div>
 		<button class="navigation_button" onclick="window.location.href='index.html#top';">
 			Home
 		</button>
 		<button class="navigation_button" onclick="window.location.href='addPost.html';">
 			Add Post
 		</button>
-		<img src="data\profile_pic.jpg" alt="Your profile picture">
+		<a href="login.html"><img src="data\profile_pic.jpg" alt="Your profile picture"></a>
 	</div>	
 	<div class="feed_container">
 		<div class="feed_starter"></div>
@@ -80,7 +24,11 @@
 			<p>This is a test!</p>
 		</div>
 		<div>
-			<p>This is a test! A long-ass test, located next to the previous one for comparison</p>
+			<p>This is a test! A long-ass test, located next to the previous one for comparison. As they say, lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sit amet consectetur adipiscing elit. Semper risus in hendrerit gravida rutrum quisque non tellus. Ipsum nunc aliquet bibendum enim facilisis gravida neque. Proin nibh nisl condimentum id venenatis a condimentum vitae sapien. Neque vitae tempus quam pellentesque nec nam aliquam sem. Iaculis nunc sed augue lacus. Purus sit amet volutpat consequat. Viverra suspendisse potenti nullam ac tortor. Nullam ac tortor vitae purus faucibus ornare. Cursus metus aliquam eleifend mi in nulla. Vestibulum sed arcu non odio euismod lacinia at quis risus. Sed felis eget velit aliquet sagittis id consectetur purus. Egestas integer eget aliquet nibh praesent.<br><br>
+
+			Sagittis aliquam malesuada bibendum arcu vitae elementum. Id leo in vitae turpis massa sed elementum tempus. Turpis massa tincidunt dui ut ornare lectus sit amet. Semper feugiat nibh sed pulvinar proin gravida hendrerit lectus a. Nascetur ridiculus mus mauris vitae ultricies. Rhoncus dolor purus non enim praesent elementum. Vehicula ipsum a arcu cursus vitae congue mauris rhoncus. Auctor urna nunc id cursus. Sed cras ornare arcu dui vivamus arcu felis bibendum. Risus nec feugiat in fermentum posuere urna nec tincidunt. Aliquet risus feugiat in ante. Rhoncus aenean vel elit scelerisque mauris.<br><br>
+
+			Augue ut lectus arcu bibendum at varius vel pharetra vel. Id interdum velit laoreet id donec ultrices. Egestas tellus rutrum tellus pellentesque. Risus feugiat in ante metus dictum. Amet volutpat consequat mauris nunc congue nisi vitae suscipit tellus. Egestas tellus rutrum tellus pellentesque eu tincidunt tortor. At auctor urna nunc id cursus metus aliquam. Risus feugiat in ante metus dictum. Id volutpat lacus laoreet non curabitur gravida arcu. Facilisi morbi tempus iaculis urna. Ante metus dictum at tempor. Est ullamcorper eget nulla facilisi etiam dignissim.</p>
 		</div>
 		<div>
 			<img src="data\profile_pic.jpg">
@@ -98,7 +46,7 @@
 		</div>
 		<div>
 			<div style="background-color: cyan;">
-				This is a div in a div test that indicates the general sibling selector has no power over declared classes and styles.
+				This is a div in a div test that indicates the general sibling selector has no power over locally declared styles.
 				Faith in humanity restored once again
 			</div>
 		</div>

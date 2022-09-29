@@ -1,0 +1,70 @@
+.navigation_bar {
+	display: flex;
+	flex-wrap: nowrap;
+	background-color: darkgreen;
+	height: 72px;
+	position: fixed;
+	width: 100%;
+	top: 0;
+	left: 0;}
+.navigation_bar > a > img {
+	border-bottom-left-radius: 60%; border-bottom-right-radius: 60%;
+	margin-top: 2px;
+	width: 11vw;
+	max-width: 154px;
+	border: 0.5vw solid darkgreen;}
+
+.bottom_bar {
+	display: flex;
+	height: 52px;
+	background-color: darkgreen;
+	position: fixed;
+	width: 100%;
+	bottom: 0;
+	left: 0;}
+
+.feed_starter {
+	background-color: lightgreen;
+	height: 72px;}
+.feed_starter ~ div {
+	display: flex;
+	width: 70vw;
+	margin-top: 16px;
+	padding: 12px;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: whitesmoke;}
+
+.feed_container {
+	background-color: lightgreen;
+	min-height: 100vh;}
+.feed_container p {
+	padding-left: 6vw;
+	margin: 0px;}
+.feed_container img + p {
+	padding-top: 5vh;}
+
+.navigation_button {
+	background-color: green;
+  	height: 50px;
+  	width: 100%;
+  	border: none;
+  	margin: auto;
+  	color: white;
+  	text-align: center;
+  	font-size: 20px;}
+.navigation_button:hover {background-color: lightgreen;}
+
+.login_window {
+	background-color: darkgreen;
+	width: 50vw;
+	margin: auto;
+	border-radius: 15%;
+	position: fixed;
+	top: 25%;
+	left: 25%;}
+.login_window:after {
+	content: "";
+	display: block;
+	padding-bottom: 100%;
+}
