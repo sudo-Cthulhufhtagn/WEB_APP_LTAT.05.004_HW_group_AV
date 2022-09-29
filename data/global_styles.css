@@ -76,10 +76,13 @@
   position: fixed;
   top: 25%;
   left: 25%;
+  text-align: center;
 }
-
 .login_window:after {
   content: "";
   display: block;
   padding-bottom: 100%;
+}
+.login_window p {
+	color: white;
 }
