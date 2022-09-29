@@ -28,6 +28,27 @@
 			bottom: 0;
 			left: 0;}
 
+		.feed_starter {
+			background-color: lightgreen;
+			height: 72px;}
+		.feed_starter ~ div {
+			display: flex;
+			width: 75vw;
+			margin-top: 16px;
+			padding: 12px;
+			margin-left: auto;
+			margin-right: auto;
+			background-color: whitesmoke;}
+
+		.feed_container {
+			background-color: lightgreen;
+			min-height: 100vh;}
+		.feed_container p {
+			padding-left: 6vw;
+			margin: 0px;}
+		.feed_container img + p {
+			padding-top: 5vh;}
+
 		.navigation_button {
   			background-color: green;
   			height: 50px;
@@ -42,7 +63,7 @@
 	</style>
 </head>
 
-<body>
+<body style="margin: 0px;">
 	<div class="navigation_bar">
 		<button class="navigation_button" onclick="window.location.href='index.html#top';">
 			Home
@@ -51,8 +72,38 @@
 			Add Post
 		</button>
 		<img src="data\profile_pic.jpg" alt="Your profile picture">
-	</div>
-	<div class="feed_container">		
+	</div>	
+	<div class="feed_container">
+		<div class="feed_starter"></div>
+
+		<div>
+			<p>This is a test!</p>
+		</div>
+		<div>
+			<p>This is a test! A long-ass test, located next to the previous one for comparison</p>
+		</div>
+		<div>
+			<img src="data\profile_pic.jpg">
+			<p>Feeling cute</p>
+		</div>
+		<div>
+			<img src="data\profile_pic.jpg">
+			<p>Extra Test</p>
+		</div>
+		<div>
+			<div>
+				This is a div in a div test that indicates the general sibling selector propagates down family hierarchies.
+				I want to kill myself
+			</div>
+		</div>
+		<div>
+			<div style="background-color: cyan;">
+				This is a div in a div test that indicates the general sibling selector has no power over declared classes and styles.
+				Faith in humanity restored once again
+			</div>
+		</div>
+
+		<div style="background-color: lightgreen; height:52px;"></div>
 	</div>
 	<div class="bottom_bar"></div>
 </body>
