@@ -4,20 +4,27 @@
 	<meta charset="UTF-8">
 	<link rel="stylesheet" href="data/global_styles.css" media="screen" />
 	<title>Feed</title>
+    <link rel="icon" href="data/icon.png">
+
 </head>
 
 <body style="margin: 0px;">
-	<div class="navigation_bar">
-		<div style="min-width: 13vw; max-width: 200px"></div>
-		<button class="navigation_button" onclick="window.location.href='index.html#top';">
-			Home
-		</button>
-		<button class="navigation_button" onclick="window.location.href='addPost.html';">
-			Add Post
-		</button>
-		<a href="login.html"><img src="data\profile_pic.jpg" alt="Your profile picture"></a>
-	</div>	
-	<div class="feed_container">
+	<header >
+		<div class="navigation_bar">
+			<!-- <div style="min-width: 13vw; max-width: 200px; height: 0px;"></div> -->
+			<button class="navigation_button1"  onclick="window.location.href='index.html#top';">
+				Home
+			</button>
+			<button class="navigation_button2" onclick="window.location.href='addPost.html';">
+				Add Post
+			</button>
+			<a href="login.html">
+				<img class="profile_pic" src="data\profile_pic.jpg" alt="Your profile picture">
+			</a>
+		</div>	
+	</header>
+
+	<nav class="feed_container">
 		<div class="feed_starter"></div>
 
 		<div>
@@ -40,7 +47,9 @@
 		</div>
 
 		<div style="height:2vh; background-color:lightgreen"></div>
-	</div>
-	<div class="bottom_bar"></div>
+	</nav>
+	<footer>
+		<div class="bottom_bar"></div>
+	</footer>
 </body>
 </html>
