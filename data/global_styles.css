@@ -2,7 +2,8 @@
   display: flex;
   flex-wrap: nowrap;
   background-color: darkgreen;
-  height: 72px;
+  height: 14vh;
+  min-height: 72px;
   position: fixed;
   width: 100%;
   top: 0;
@@ -13,8 +14,9 @@
   border-bottom-left-radius: 60%;
   border-bottom-right-radius: 60%;
   margin-top: 2px;
-  width: 11vw;
-  max-width: 154px;
+  width: 12vw;
+  max-width: 200px;
+  min-width: 100px;
   border: 0.5vw solid darkgreen;
 }
 
@@ -30,7 +32,8 @@
 
 .feed_starter {
   background-color: lightgreen;
-  height: 72px;
+  height: 14vh;
+  min-height: 72px;
 }
 .feed_starter ~ div {
   display: flex;
@@ -56,13 +59,14 @@
 
 .navigation_button {
   background-color: green;
-  height: 50px;
+  height: 9vh;
+  min-height: 48px;
   width: 100%;
   border: none;
   margin: auto;
   color: white;
   text-align: center;
-  font-size: 20px;
+  font-size: 5vh;
 }
 .navigation_button:hover {
   background-color: lightgreen;
