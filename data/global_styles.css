@@ -56,6 +56,10 @@
   padding-left: 6vw;
   margin: 0px;
 }
+.feed_container p::first-letter {
+  color: #008c1e;
+  font-size: x-large;
+}
 .feed_container img + p {
   padding-top: 5vh;
 }
