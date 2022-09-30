@@ -13,11 +13,14 @@
 .navigation_bar > a > img {
   border-bottom-left-radius: 60%;
   border-bottom-right-radius: 60%;
-  margin-top: 2px;
+  padding: 0px;
+  margin-top: 2.5vh;
   width: 12vw;
   max-width: 200px;
   min-width: 100px;
-  border: 0.5vw solid darkgreen;
+  border-bottom: 0.5vw solid darkgreen;
+  border-left: 0.5vw solid darkgreen;
+  border-right: 0.5vw solid darkgreen;
 }
 
 .bottom_bar {
@@ -66,7 +69,7 @@
   margin: auto;
   color: white;
   text-align: center;
-  font-size: 5vh;
+  font-size: 4vh;
 }
 .navigation_button:hover {
   background-color: lightgreen;
