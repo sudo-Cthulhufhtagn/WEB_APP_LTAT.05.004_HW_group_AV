@@ -25,7 +25,7 @@
 
 .bottom_bar {
   display: flex;
-  height: 52px;
+  height: 8vh;
   background-color: darkgreen;
   position: fixed;
   width: 100%;
@@ -41,8 +41,9 @@
 .feed_starter ~ div {
   display: flex;
   width: 70vw;
-  margin-top: 16px;
-  padding: 12px;
+  margin-top: 4vh;
+  padding: 3vh;
+  border-radius: 3vw;
   margin-left: auto;
   margin-right: auto;
   background-color: whitesmoke;
@@ -52,8 +53,12 @@
   background-color: lightgreen;
   min-height: 100vh;
 }
+.feed_container img {
+	border-radius: 4vh;
+}
 .feed_container p {
   padding-left: 6vw;
+  font-size: 3vh;
   margin: 0px;
 }
 .feed_container p::first-letter {
