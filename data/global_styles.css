@@ -18,7 +18,7 @@
   border-bottom-right-radius: 40%;
   /* padding: 0px; */
   padding: clamp(0rem, 0vw, 0rem);
-  margin-top: 2.5vh;
+  /* margin-top: 2.5vh; */
   width: 12vw;
   max-width: 200px;
   min-width: 100px;
@@ -149,10 +149,7 @@
     flex-direction: column;
     align-items: center;
   }
-  .profile_pic {
-    display: none;
-    margin-top: 0px;
-  }
+  
 }
 
 /* Applies when the browser's width is 1000px wide or wider: */
@@ -164,5 +161,8 @@
   }
   .navigation_button1 {
     margin-left: 13vw;
+  }
+  .profile_pic {
+    margin-top: 2.5vh;
   }
 }
