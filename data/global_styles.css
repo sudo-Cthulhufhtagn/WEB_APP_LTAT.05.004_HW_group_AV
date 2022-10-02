@@ -1,32 +1,5 @@
-@media (min-width: 800px) {
-  .navigation_bar {
-    display: flex;
-  }
-  .header {
-    flex-direction: column;
-    align-items: center;
-  }
-}
 
-/* Applies when the browser's width is 1000px wide or wider: */
 
-@media (min-width: 1000px) {
-  .header {
-    flex-direction: row;
-    justify-content: space-between;
-  }
-
-  .navigation_button1 {
-    margin-left: 13vw;
-  }
-}
-
-@media (max-width: 740px) {
-  .profile_pic {
-    display: none;
-    margin-top: 0px;
-  }
-}
 
 .navigation_bar {
   /* display: flex; */
@@ -141,7 +114,8 @@
 }
 
 .login_window button{
-  background-color: blueviolet;
+  margin-top: 2vw;
+  background-color: rgb(113, 241, 1);
   color: rgb(45, 0, 87);
   padding: 1vh;
   cursor: pointer;
@@ -165,4 +139,30 @@
   content: "";
   display: block;
   padding-bottom: 100%;
+}
+
+@media (min-width: 800px) {
+  .navigation_bar {
+    display: flex;
+  }
+  .header {
+    flex-direction: column;
+    align-items: center;
+  }
+  .profile_pic {
+    display: none;
+    margin-top: 0px;
+  }
+}
+
+/* Applies when the browser's width is 1000px wide or wider: */
+
+@media (min-width: 1000px) {
+  .header {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .navigation_button1 {
+    margin-left: 13vw;
+  }
 }
