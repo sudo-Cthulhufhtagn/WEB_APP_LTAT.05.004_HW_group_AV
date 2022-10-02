@@ -17,7 +17,8 @@
   border-bottom-left-radius: 40%;
   border-bottom-right-radius: 40%;
   /* padding: 0px; */
-  padding: clamp(0rem, 0vw, 0rem);
+  /* padding: clamp(0rem, 0vw, 0rem); */
+  padding: 0vw;
   /* margin-top: 2.5vh; */
   width: 12vw;
   max-width: 200px;
