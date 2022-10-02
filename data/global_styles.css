@@ -114,7 +114,24 @@
   text-align: center;
 }
 
-.login_window button{
+#login_button {
+  margin-top: 2vw;
+  background-color: rgb(152, 53, 174);
+  color: rgb(45, 0, 87);
+  padding: 1vh;
+  cursor: pointer;
+  border-width: 1vw;
+  border-color: rgba(121, 10, 225, 0.26);
+
+}
+
+#login_button:hover{
+  background-color: violet;
+  padding: 1vh;
+  cursor: pointer;
+}
+
+#post_button {
   margin-top: 2vw;
   background-color: rgb(113, 241, 1);
   color: rgb(45, 0, 87);
@@ -125,7 +142,7 @@
 
 }
 
-.login_window button:hover{
+#post_button:hover{
   background-color: violet;
   padding: 1vh;
   cursor: pointer;
