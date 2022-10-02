@@ -59,6 +59,7 @@
 }
 .feed_container img {
   border-radius: 4vh;
+  max-width: 24vw;
 }
 .feed_container p {
   padding-left: 6vw;
