@@ -13,13 +13,17 @@ function addPostToFeed(jsonPostData){
 	let postCap = document.getElementById("postCap");
 	let newPost = document.createElement("div");
 
-	// let newPostImg = document.createElement("img")
-	// jsonPostData.hasImg ? newPost.appendChild("img") :; NB! figure out later
+	if (jsonPostData.hasImg) {
+		let newPostImg = document.createElement("img");
+		newPostImg.src = 'data:image/jpeg;base64,' + jsonPostData.Img;
+		newPost.appendChild(newPostImg);
+	}
 
-	let newPostText = document.createElement("p")
-	let newPostTextData = document.createTextNode(jsonPostData.text);
-	newPostText.append(newPostTextData)
-
-	newPost.appendChild(newPostText);
+	if (jsonPostData.hasTxt) {
+		let newPostText = document.createElement("p")
+		let newPostTextData = document.createTextNode(jsonPostData.text);
+		newPostText.append(newPostTextData)
+		newPost.appendChild(newPostText);
+	}
 	postCap.before(newPost);
 }
