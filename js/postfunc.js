@@ -1,4 +1,4 @@
-function getPosts(address){
+function getFetchPosts(){
 	fetch("https://api.jsonstores.com/AA903698701950783488Vror/car/1")
 	.then(response => response.json())
 	.then(json => {
@@ -6,6 +6,18 @@ function getPosts(address){
 			addPostToFeed(json.data[i]);
 		}
 	})
+}
+
+function getLocalPosts(){
+	async function getLocalData(){
+		const response = await import("./data/testing.json");
+		return response.json();
+	}
+	
+	json = getLocalData();
+	for (let i in json.data) {
+			addPostToFeed(json.data[i]);
+	}
 }
 
 function addPostToFeed(jsonPostData){
