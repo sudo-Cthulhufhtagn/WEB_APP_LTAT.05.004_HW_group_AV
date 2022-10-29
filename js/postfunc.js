@@ -9,11 +9,12 @@ function getPosts(address){
 }
 
 function addPostToFeed(jsonPostData){
+	if (!(jsonPostData.hasImg||jsonPostData.hasTxt)) {return null;}
 	let postCap = document.getElementById("postCap");
 	let newPost = document.createElement("div");
 
 	// let newPostImg = document.createElement("img")
-	// jsonPostData.hasImg ? newPost.appendChild("img") : //pass; NB! figure out later
+	// jsonPostData.hasImg ? newPost.appendChild("img") :; NB! figure out later
 
 	let newPostText = document.createElement("p")
 	let newPostTextData = document.createTextNode(jsonPostData.text);

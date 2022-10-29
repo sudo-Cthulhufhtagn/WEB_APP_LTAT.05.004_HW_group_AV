@@ -1,17 +1,42 @@
 {"data":[
     {
+        "username":"test",
+        "email":"test@your.mom",
+        "hasImg":false,
+        "Img":"",
+        "hasTxt":true,
         "text":"Lorem"
     },
     {
+        "username":"test",
+        "email":"test@your.mom",
+        "hasImg":false,
+        "Img":"",
+        "hasTxt":true,
         "text":"Ipsum"
     },
     {
+        "username":"test",
+        "email":"test@your.mom",
+        "hasImg":false,
+        "Img":"",
+        "hasTxt":true,
         "text":"I"
     },
     {
+        "username":"test",
+        "email":"test@your.mom",
+        "hasImg":false,
+        "Img":"",
+        "hasTxt":true,
         "text":"Wanna"
     },
     {
+        "username":"test",
+        "email":"test@your.mom",
+        "hasImg":false,
+        "Img":"",
+        "hasTxt":false,
         "text":"Kill"
     }
 ]}
