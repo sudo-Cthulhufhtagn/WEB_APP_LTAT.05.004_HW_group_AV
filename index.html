@@ -21,9 +21,16 @@
 			<button class="navigation_button2" onclick="window.location.href='addPost.html';">
 				Add Post
 			</button>
-			<a href="login.html">
+			<a id="myLink" href="#" onclick="dropDown();return false;">
 				<img class="profile_pic" src="data\profile2.png" alt="Your profile picture">
+				<div id="myDropdown" class="dropdown-content">
+					<a href="#" id="myDropdownName">Link 1</a>
+					<a href="#" id="myDropdownEmail">Link 2</a>
+					<a href="#" id="myDropdownLogout" onclick="logOut();return false;">Link 3</a>
+				</div>
 			</a>
+			<!-- <div class="logout">
+			</div> -->
 		</div>	
 	</header>
 

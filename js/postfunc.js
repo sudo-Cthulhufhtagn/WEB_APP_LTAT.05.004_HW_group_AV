@@ -1,4 +1,66 @@
 var loggedIN = false;
+var menuOpen = false;
+
+class Person {
+	constructor(name, email, paswd)
+		{
+		this.name = name;
+		this.email = email,
+		this.password_hash = paswd
+		}
+}
+
+const list_of_man = ["name", "eamael"]
+const manPlaceholder = new Person("Random", "gg@gmail.com", "gjk.ehgresgbhj")
+	
+
+function logOut(){
+	window.location.href = "login.html";
+}
+
+// Close the dropdown menu if the user clicks outside of it
+window.onclick = function(event) {
+if (!event.target.matches('.dropbtn')) {
+	var dropdowns = document.getElementsByClassName("dropdown-content");
+	var i;
+	for (i = 0; i < dropdowns.length; i++) {
+	var openDropdown = dropdowns[i];
+	if (openDropdown.classList.contains('show')) {
+		openDropdown.classList.remove('show');
+	}
+	}
+}
+}
+
+function dropDown() {
+	console.log("entry 1")
+	// if (!loggedIN){
+	// 	window.location.href = "login.html";
+	// 	loggedIN = true;
+	// }
+	// else 
+	if (!menuOpen) {
+		console.log("entry 2" + menuOpen)
+
+		document.getElementById("myDropdown").classList.toggle("show");
+		menuOpen = true;
+		var dropD = document.getElementById("myDropdown")//.classList.toggle("block");
+		dropD.style.display = "block";
+		document.getElementById("myDropdownName").textContent = manPlaceholder['name']
+		document.getElementById("myDropdownEmail").textContent = manPlaceholder['email']
+		document.getElementById("myDropdownLogout").textContent = "logout"
+	}
+	else {
+
+		var dropD = document.getElementById("myDropdown")//.classList.toggle("block");
+		console.log(dropD)
+		
+		menuOpen = false;
+		dropD.style.display = "none";
+
+	}
+
+}
 
 function getFetchPosts(){
 	// fetch("https://api.jsonstores.com/AA903698701950783488Vror/car/1")
