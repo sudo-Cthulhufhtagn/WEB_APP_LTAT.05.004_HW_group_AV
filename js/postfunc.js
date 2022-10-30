@@ -57,9 +57,7 @@ function dropDown() {
 		
 		menuOpen = false;
 		dropD.style.display = "none";
-
 	}
-
 }
 
 function getFetchPosts(){
@@ -73,18 +71,7 @@ function getFetchPosts(){
 	})
 }
 
-
-function getLocalPosts(){
-	// async function getLocalData(){
-	// 	const response = await import("./data/testing.json");
-	// 	return response.json();
-	// }
-	
-	// json = getLocalData();
-	// for (let i in json.data) {
-	// 	addPostToFeed(json.data[i]);
-	// }
-
+function getLocalFetchPosts(){
 	fetch("./data/testing.json")
 	.then(response => response.json())
 	.then(json => {
@@ -92,7 +79,18 @@ function getLocalPosts(){
 			addPostToFeed(json.data[i]);
 		}
 	})
-	
+}
+
+function getLocalImportPosts(){
+	async function getLocalData(){
+		const response = await import("./data/testing.json");
+		return response.json();
+	}
+
+	json = getLocalData();
+	for (let i in json.data) {
+			addPostToFeed(json.data[i]);
+	}
 }
 
 function addPostToFeed(jsonPostData){

@@ -8,7 +8,9 @@
 </head>
 
 <script src="./js/postfunc.js"></script>
-<script type="text/javascript"> window.onload = getLocalPosts; </script>
+<script type="text/javascript"> window.onload = getFetchPosts; </script> <!-- We have 2 Local Fetch functions, because they don't work on every platform -->
+																		 <!-- Because of that, we use the online function in production -->
+																		 <!-- Check out getLocalFetchPosts or getLocalImportPosts -->
 
 <body style="margin: 0px;">
 	<header >
@@ -21,7 +23,7 @@
 			<button class="navigation_button2" onclick="window.location.href='addPost.html';">
 				Add Post
 			</button>
-			<a id="myLink" href="#" onclick="dropDown();return false;">
+			<a id="myLink" href="#" style="padding: 0px;" onclick="dropDown();return false;">
 				<img class="profile_pic" src="data\profile2.png" alt="Your profile picture">
 				<div id="myDropdown" class="dropdown-content">
 					<a href="#" id="myDropdownName">Link 1</a>
