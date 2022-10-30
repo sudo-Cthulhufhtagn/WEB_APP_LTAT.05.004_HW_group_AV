@@ -62,7 +62,7 @@ function dropDown() {
 
 function getFetchPosts(){
 	// fetch("https://api.jsonstores.com/AA903698701950783488Vror/car/1")
-	fetch("http://myjson.dit.upm.es/api/bins/ih8e")
+	fetch("http://myjson.dit.upm.es/api/bins/fqgu")
 	.then(response => response.json())
 	.then(json => {
 		for (let i in json.data) {
