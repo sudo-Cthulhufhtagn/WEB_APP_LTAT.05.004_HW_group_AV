@@ -1,3 +1,5 @@
+var loggedIN = false;
+
 function getFetchPosts(){
 	// fetch("https://api.jsonstores.com/AA903698701950783488Vror/car/1")
 	fetch("http://myjson.dit.upm.es/api/bins/ih8e")
@@ -9,16 +11,26 @@ function getFetchPosts(){
 	})
 }
 
+
 function getLocalPosts(){
-	async function getLocalData(){
-		const response = await import("./data/testing.json");
-		return response.json();
-	}
+	// async function getLocalData(){
+	// 	const response = await import("./data/testing.json");
+	// 	return response.json();
+	// }
 	
-	json = getLocalData();
-	for (let i in json.data) {
+	// json = getLocalData();
+	// for (let i in json.data) {
+	// 	addPostToFeed(json.data[i]);
+	// }
+
+	fetch("./data/testing.json")
+	.then(response => response.json())
+	.then(json => {
+		for (let i in json.data) {
 			addPostToFeed(json.data[i]);
-	}
+		}
+	})
+	
 }
 
 function addPostToFeed(jsonPostData){
